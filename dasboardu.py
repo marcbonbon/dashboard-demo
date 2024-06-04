@@ -7,7 +7,7 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 
 
-combined_df = pd.read_csv('C:/Users/marce/Desktop/testing/modified_data.csv')
+combined_df = pd.read_csv('modified_data.csv') # change PATH here
 
 combined_df['date'] = pd.to_datetime(combined_df['date'])
 combined_df = combined_df.drop(['station_name', 'station_id'], axis=1)
